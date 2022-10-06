@@ -9,7 +9,7 @@ interpretation of natural language commands that specify metadata.
 =head1 Synopsis
 
     use DSL::Entity::MachineLearning;
-    my $rcode = ToMetadataEntityCode('ScreeningEvent');
+    my $rcode = ToMachineLearningEntityCode('NearestNeighbors');
 
 =end pod
 
@@ -49,11 +49,11 @@ my DSL::Entity::MachineLearning::ResourceAccess $resourceObj;
 our sub resource-access-object(--> DSL::Entity::MachineLearning::ResourceAccess) { return $resourceObj; }
 
 #-----------------------------------------------------------
-#| Named entity recognition for metadata. (proto)
-proto ToMetadataEntityCode(Str $command, Str $target = 'WL-System', | ) is export {*}
+#| Named entity recognition for machine learning. (proto)
+proto ToMachineLearningEntityCode(Str $command, Str $target = 'WL-System', | ) is export {*}
 
-#| Named entity recognition for metadata
-multi ToMetadataEntityCode( Str $command, Str $target = 'WL-System', *%args ) {
+#| Named entity recognition for machine learning
+multi ToMachineLearningEntityCode( Str $command, Str $target = 'WL-System', *%args ) {
 
     my $pCOMMAND = DSL::Entity::MachineLearning::Grammar;
     $pCOMMAND.set-resources(DSL::Entity::MachineLearning::resource-access-object());
