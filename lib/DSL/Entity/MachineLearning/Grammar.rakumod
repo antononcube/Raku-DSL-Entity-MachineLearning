@@ -17,6 +17,11 @@ grammar DSL::Entity::MachineLearning::Grammar
         <classifier-property-entity-command> |
         <classifier-entity-command> }
 
+    regex machine-learning-entity-command {
+        | <classifier-property-entity-command>
+        | <classifier-entity-command>
+    }
+
     regex classifier-property-entity-command { <entity-classifier-property-name> }
 
     regex classifier-entity-command { <entity-classifier-name> }
