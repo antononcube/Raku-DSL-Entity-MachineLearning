@@ -15,9 +15,15 @@ my $pCOMMAND = DSL::Entity::MachineLearning::Grammar;
 
 $pCOMMAND.set-resources(DSL::Entity::MachineLearning::resource-access-object());
 
+#.say for DSL::Entity::MachineLearning::resource-access-object().getNameToEntityID();
+#.say for DSL::Entity::MachineLearning::resource-access-object().getKnownNames();
+#.say for DSL::Entity::MachineLearning::resource-access-object().getKnownNameWords();
+
 #use Grammar::Tracer;
 
 say $pCOMMAND.parse('decision tree', rule => 'TOP');
+
+say $pCOMMAND.parse('precision', rule => 'TOP');
 
 say $pCOMMAND.parse('gradient boosted trees',
         rule => 'classifier-entity-command',
@@ -32,7 +38,8 @@ my @testCommands = (
 'Decision tree',
 'SupportVectorMachine',
 'precision',
-'accuracy'
+'accuracy',
+'true positive number'
 );
 
 

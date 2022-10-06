@@ -1,38 +1,8 @@
-use v6;
+use v6.d;
 
-use DSL::Entity::MachineLearning::Grammar;
-use DSL::Shared::Actions::English::WL::PipelineCommand;
-use DSL::Entity::MachineLearning::ResourceAccess;
-
+use DSL::Entity::MachineLearning::Actions::WL::System;
 
 class DSL::Entity::MachineLearning::Actions::WL::Entity
-        is DSL::Shared::Actions::English::WL::PipelineCommand {
+        is DSL::Entity::MachineLearning::Actions::WL::System {
 
-    has DSL::Entity::MachineLearning::ResourceAccess $.resources;
-
-    ##========================================================
-    ## Grammar methods
-    ##========================================================
-
-    method TOP($/) {
-        make $/.values[0].made;
-    }
-
-    method classifier-property-entity-command($/) {
-        make $/.values[0].made;
-    }
-
-    method entity-classifier-property-name($/) {
-        my $nm = $!resources.name-to-entity-id('ClassifierProperty', $/.Str.lc, :!warn);
-        make '"' ~ $nm ~ '"';
-    }
-
-    method classifier-entity-command($/) {
-        make $/.values[0].made;
-    }
-
-    method entity-classifier-name($/) {
-        my $nm = $!resources.name-to-entity-id('Classifier', $/.Str.lc, :!warn);
-        make '"' ~ $nm ~ '"';
-    }
 }

@@ -1,117 +1,63 @@
 Name,EntityID
+acceptance threshold,AcceptanceThreshold
+AcceptanceThreshold,AcceptanceThreshold
 accuracy,Accuracy
 Accuracy,Accuracy
-accuracy baseline,AccuracyBaseline
-AccuracyBaseline,AccuracyBaseline
-accuracy rejection plot,AccuracyRejectionPlot
-AccuracyRejectionPlot,AccuracyRejectionPlot
-area under roc curve,AreaUnderROCCurve
-AreaUnderROCCurve,AreaUnderROCCurve
+anomaly detector,AnomalyDetector
+AnomalyDetector,AnomalyDetector
+batch evaluation speed,BatchEvaluationSpeed
+BatchEvaluationSpeed,BatchEvaluationSpeed
 batch evaluation time,BatchEvaluationTime
 BatchEvaluationTime,BatchEvaluationTime
-best classified examples,BestClassifiedExamples
-BestClassifiedExamples,BestClassifiedExamples
-calibration curve,CalibrationCurve
-CalibrationCurve,CalibrationCurve
-calibration data,CalibrationData
-CalibrationData,CalibrationData
-classifier function,ClassifierFunction
-ClassifierFunction,ClassifierFunction
-class mean cross entropy,ClassMeanCrossEntropy
-ClassMeanCrossEntropy,ClassMeanCrossEntropy
-class rejection rate,ClassRejectionRate
-ClassRejectionRate,ClassRejectionRate
-cohen kappa,CohenKappa
-CohenKappa,CohenKappa
-confusion distribution,ConfusionDistribution
-ConfusionDistribution,ConfusionDistribution
-confusion function,ConfusionFunction
-ConfusionFunction,ConfusionFunction
-confusion matrix,ConfusionMatrix
-ConfusionMatrix,ConfusionMatrix
-confusion matrix plot,ConfusionMatrixPlot
-ConfusionMatrixPlot,ConfusionMatrixPlot
-correctly classified examples,CorrectlyClassifiedExamples
-CorrectlyClassifiedExamples,CorrectlyClassifiedExamples
-decision utilities,DecisionUtilities
-DecisionUtilities,DecisionUtilities
-error,Error
-Error,Error
+calibrated,Calibrated
+Calibrated,Calibrated
+classes,Classes
+Classes,Classes
+class number,ClassNumber
+ClassNumber,ClassNumber
+class priors,ClassPriors
+ClassPriors,ClassPriors
 evaluation time,EvaluationTime
 EvaluationTime,EvaluationTime
-examples,Examples
-Examples,Examples
-f1 score,F1Score
-F1Score,F1Score
-false discovery rate,FalseDiscoveryRate
-FalseDiscoveryRate,FalseDiscoveryRate
-false negative examples,FalseNegativeExamples
-FalseNegativeExamples,FalseNegativeExamples
-false negative number,FalseNegativeNumber
-FalseNegativeNumber,FalseNegativeNumber
-false negative rate,FalseNegativeRate
-FalseNegativeRate,FalseNegativeRate
-false positive examples,FalsePositiveExamples
-FalsePositiveExamples,FalsePositiveExamples
-false positive number,FalsePositiveNumber
-FalsePositiveNumber,FalsePositiveNumber
-false positive rate,FalsePositiveRate
-FalsePositiveRate,FalsePositiveRate
-geometric mean probability,GeometricMeanProbability
-GeometricMeanProbability,GeometricMeanProbability
-indeterminate examples,IndeterminateExamples
-IndeterminateExamples,IndeterminateExamples
-least certain examples,LeastCertainExamples
-LeastCertainExamples,LeastCertainExamples
-likelihood,Likelihood
-Likelihood,Likelihood
-linear calibration curve,LinearCalibrationCurve
-LinearCalibrationCurve,LinearCalibrationCurve
-log likelihood,LogLikelihood
-LogLikelihood,LogLikelihood
-matthews correlation coefficient,MatthewsCorrelationCoefficient
-MatthewsCorrelationCoefficient,MatthewsCorrelationCoefficient
+example number,ExampleNumber
+ExampleNumber,ExampleNumber
+feature extractor,FeatureExtractor
+FeatureExtractor,FeatureExtractor
+feature names,FeatureNames
+FeatureNames,FeatureNames
+feature number,FeatureNumber
+FeatureNumber,FeatureNumber
+feature types,FeatureTypes
+FeatureTypes,FeatureTypes
+function memory,FunctionMemory
+FunctionMemory,FunctionMemory
+function properties,FunctionProperties
+FunctionProperties,FunctionProperties
+indeterminate threshold,IndeterminateThreshold
+IndeterminateThreshold,IndeterminateThreshold
+learning curve,LearningCurve
+LearningCurve,LearningCurve
+max training memory,MaxTrainingMemory
+MaxTrainingMemory,MaxTrainingMemory
 mean cross entropy,MeanCrossEntropy
 MeanCrossEntropy,MeanCrossEntropy
-mean decision utility,MeanDecisionUtility
-MeanDecisionUtility,MeanDecisionUtility
-misclassified examples,MisclassifiedExamples
-MisclassifiedExamples,MisclassifiedExamples
-most certain examples,MostCertainExamples
-MostCertainExamples,MostCertainExamples
-negative predictive value,NegativePredictiveValue
-NegativePredictiveValue,NegativePredictiveValue
-perplexity,Perplexity
-Perplexity,Perplexity
-precision,Precision
-Precision,Precision
-probabilities,Probabilities
-Probabilities,Probabilities
-probability histogram,ProbabilityHistogram
-ProbabilityHistogram,ProbabilityHistogram
+method,Method
+Method,Method
+method description,MethodDescription
+MethodDescription,MethodDescription
+method option,MethodOption
+MethodOption,MethodOption
+method parameters,MethodParameters
+MethodParameters,MethodParameters
+missing synthesizer,MissingSynthesizer
+MissingSynthesizer,MissingSynthesizer
+performance goal,PerformanceGoal
+PerformanceGoal,PerformanceGoal
 properties,Properties
 Properties,Properties
-recall,Recall
-Recall,Recall
-rejection rate,RejectionRate
-RejectionRate,RejectionRate
-report,Report
-Report,Report
-roc curve,ROCCurve
-ROCCurve,ROCCurve
-scott pi,ScottPi
-ScottPi,ScottPi
-specificity,Specificity
-Specificity,Specificity
-top confusions,TopConfusions
-TopConfusions,TopConfusions
-true negative examples,TrueNegativeExamples
-TrueNegativeExamples,TrueNegativeExamples
-true negative number,TrueNegativeNumber
-TrueNegativeNumber,TrueNegativeNumber
-true positive examples,TruePositiveExamples
-TruePositiveExamples,TruePositiveExamples
-true positive number,TruePositiveNumber
-TruePositiveNumber,TruePositiveNumber
-worst classified examples,WorstClassifiedExamples
-WorstClassifiedExamples,WorstClassifiedExamples
+training class priors,TrainingClassPriors
+TrainingClassPriors,TrainingClassPriors
+training time,TrainingTime
+TrainingTime,TrainingTime
+utility function,UtilityFunction
+UtilityFunction,UtilityFunction

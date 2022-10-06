@@ -13,21 +13,21 @@ $pCOMMAND.set-resources(DSL::Entity::MachineLearning::resource-access-object());
 plan 6;
 
 ## 1
-ok $pCOMMAND.parse('roc curve', rule => 'classifier-property-entity-command'), 'roc curve';
+ok $pCOMMAND.parse('roc curve', rule => 'classifier-measurement-entity-command'), 'roc curve';
 
 ## 2
-ok $pCOMMAND.parse('ROCCurve', rule => 'classifier-property-entity-command'), 'ROCCurve';
+ok $pCOMMAND.parse('ROCCurve', rule => 'classifier-measurement-entity-command'), 'ROCCurve';
 
 ## 3
-ok $pCOMMAND.parse('True positive rate', rule => 'classifier-property-entity-command'), 'True positive rate';
+ok $pCOMMAND.parse('True positive number', rule => 'classifier-measurement-entity-command'), 'True positive number';
 
 ## 4
-ok $pCOMMAND.parse('TruePositiveRate', rule => 'classifier-property-entity-command'), 'TruePositiveRate';
+ok $pCOMMAND.parse('TruePositiveNumber', rule => 'classifier-measurement-entity-command'), 'TruePositiveRate';
 
 ## 5
-ok $pCOMMAND.parse('Accuracy', rule => 'classifier-property-entity-command'), 'Accuracy';
+ok $pCOMMAND.parse('Accuracy', rule => 'classifier-measurement-entity-command'), 'Accuracy';
 
 ## 6
-ok $pCOMMAND.parse('f1 score', rule => 'classifier-property-entity-command'), 'f1 score';
+ok $pCOMMAND.parse('f1 score', rule => 'classifier-measurement-entity-command'), 'f1 score';
 
 done-testing;

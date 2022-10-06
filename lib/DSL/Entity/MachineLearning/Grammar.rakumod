@@ -13,14 +13,18 @@ grammar DSL::Entity::MachineLearning::Grammar
 
     # TOP
     regex TOP {
-        <pipeline-command> |
-        <classifier-property-entity-command> |
-        <classifier-entity-command> }
+        | <pipeline-command>
+        | <classifier-measurement-entity-command>
+        | <classifier-property-entity-command>
+        | <classifier-entity-command> }
 
     regex machine-learning-entity-command {
+        | <classifier-measurement-entity-command>
         | <classifier-property-entity-command>
         | <classifier-entity-command>
     }
+
+    regex classifier-measurement-entity-command { <entity-classifier-measurement-name> }
 
     regex classifier-property-entity-command { <entity-classifier-property-name> }
 

@@ -8,11 +8,16 @@ role DSL::Entity::MachineLearning::Grammar::EntityNames
         does DSL::Shared::Roles::English::PipelineCommand {
 
     # It is assumed that metadata types have only alpha-numeric characters.
+    regex entity-classifier-name {
+        ([<< <word-value> >>]+ % \h+) <?{ self.get-resources().known-name('Classifier', $0.Str.lc) }>
+    }
+
+    regex entity-classifier-measurement-name {
+        ( [ << <word-value> >> ]+ % \h+ ) <?{ self.get-resources().known-name('ClassifierMeasurement', $0.Str.lc) }>
+    }
+
     regex entity-classifier-property-name {
         ( [ << <word-value> >> ]+ % \h+ ) <?{ self.get-resources().known-name('ClassifierProperty', $0.Str.lc) }>
     }
 
-    regex entity-classifier-name {
-        ([<< <word-value> >>]+ % \h+) <?{ self.get-resources().known-name('Classifier', $0.Str.lc) }>
-    }
 }

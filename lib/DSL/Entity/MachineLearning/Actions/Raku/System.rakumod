@@ -20,21 +20,30 @@ class DSL::Entity::MachineLearning::Actions::Raku::System
         make $/.values[0].made;
     }
 
-    method classifier-property-entity-command($/) {
-        make $/.values[0].made;
-    }
-
-    method entity-classifier-property-name($/) {
-        my $nm = $!resources.name-to-entity-id('ClassifierProperty', $/.Str.lc, :!warn);
-        make '"' ~ $nm ~ '"';
-    }
-
     method classifier-entity-command($/) {
         make $/.values[0].made;
     }
 
     method entity-classifier-name($/) {
         my $nm = $!resources.name-to-entity-id('Classifier', $/.Str.lc, :!warn);
+        make '"' ~ $nm ~ '"';
+    }
+
+    method classifier-measurement-entity-command($/) {
+        make $/.values[0].made;
+    }
+
+    method entity-classifier-measurement-name($/) {
+        my $nm = $!resources.name-to-entity-id('ClassifierMeasurement', $/.Str.lc, :!warn);
+        make '"' ~ $nm ~ '"';
+    }
+
+    method classifier-property-entity-command($/) {
+        make $/.values[0].made;
+    }
+
+    method entity-classifier-property-name($/) {
+        my $nm = $!resources.name-to-entity-id('ClassifierProperty', $/.Str.lc, :!warn);
         make '"' ~ $nm ~ '"';
     }
 }

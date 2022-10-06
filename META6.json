@@ -23,6 +23,7 @@
     "DSL::Entity::MachineLearning::ResourceAccess": "lib/DSL/Entity/MachineLearning/ResourceAccess.rakumod"
   },
   "resources": [
+    "ClassifierMeasurementNameToEntityID_EN.csv",
     "ClassifierNameToEntityID_EN.csv",
     "ClassifierPropertyNameToEntityID_EN.csv"
   ],
