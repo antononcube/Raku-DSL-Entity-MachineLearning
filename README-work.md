@@ -25,26 +25,6 @@ say $pCOMMAND.parse('DecisionTree', rule => 'machine-learning-entity-command');
 say $pCOMMAND.parse('gradient boosted trees', rule => 'machine-learning-entity-command');
 say $pCOMMAND.parse('roc curve', rule => 'machine-learning-entity-command');
 ```
-```
-# ｢DecisionTree｣
-#  classifier-entity-command => ｢DecisionTree｣
-#   entity-classifier-name => ｢DecisionTree｣
-#    0 => ｢DecisionTree｣
-#     word-value => ｢DecisionTree｣
-# ｢gradient boosted trees｣
-#  classifier-entity-command => ｢gradient boosted trees｣
-#   entity-classifier-name => ｢gradient boosted trees｣
-#    0 => ｢gradient boosted trees｣
-#     word-value => ｢gradient｣
-#     word-value => ｢boosted｣
-#     word-value => ｢trees｣
-# ｢roc curve｣
-#  classifier-property-entity-command => ｢roc curve｣
-#   entity-classifier-property-name => ｢roc curve｣
-#    0 => ｢roc curve｣
-#     word-value => ｢roc｣
-#     word-value => ｢curve｣
-```
 
 ------
 
