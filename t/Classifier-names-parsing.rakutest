@@ -1,0 +1,39 @@
+use lib './lib';
+use lib '.';
+use DSL::Entity::MachineLearning;
+use Test;
+
+##===========================================================
+## Data formats
+##===========================================================
+
+my $pCOMMAND = DSL::Entity::MachineLearning::Grammar;
+$pCOMMAND.set-resources(DSL::Entity::MachineLearning::resource-access-object());
+
+plan 8;
+
+## 1
+ok $pCOMMAND.parse('decision tree', rule => 'classifier-entity-command'), 'decision tree';
+
+## 2
+ok $pCOMMAND.parse('DecisionTree', rule => 'classifier-entity-command'), 'DecisionTree';
+
+## 3
+ok $pCOMMAND.parse('Gradient boosted trees', rule => 'classifier-entity-command'), 'Gradient boosted trees';
+
+## 4
+ok $pCOMMAND.parse('GradientBoostedTrees', rule => 'classifier-entity-command'), 'GradientBoostedTrees';
+
+## 5
+ok $pCOMMAND.parse('nearest neighbors', rule => 'classifier-entity-command'), 'nearest neighbors';
+
+## 5
+ok $pCOMMAND.parse('NearestNeighbors', rule => 'classifier-entity-command'), 'NearestNeighbors';
+
+## 7
+ok $pCOMMAND.parse('logistic regression', rule => 'classifier-entity-command'), 'logistic regression';
+
+## 8
+ok $pCOMMAND.parse('LogisticRegression', rule => 'classifier-entity-command'), 'LogisticRegression';
+
+done-testing;
