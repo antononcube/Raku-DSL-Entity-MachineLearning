@@ -1,0 +1,21 @@
+Name,EntityID
+class distributions,ClassDistributions
+ClassDistributions,ClassDistributions
+decision tree,DecisionTree
+DecisionTree,DecisionTree
+gradient boosted trees,GradientBoostedTrees
+GradientBoostedTrees,GradientBoostedTrees
+logistic regression,LogisticRegression
+LogisticRegression,LogisticRegression
+markov,Markov
+Markov,Markov
+naive bayes,NaiveBayes
+NaiveBayes,NaiveBayes
+nearest neighbors,NearestNeighbors
+NearestNeighbors,NearestNeighbors
+neural network,NeuralNetwork
+NeuralNetwork,NeuralNetwork
+random forest,RandomForest
+RandomForest,RandomForest
+support vector machine,SupportVectorMachine
+SupportVectorMachine,SupportVectorMachine

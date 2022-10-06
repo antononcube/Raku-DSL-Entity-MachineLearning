@@ -1,0 +1,40 @@
+{
+  "name": "DSL::Entity::MachineLearning",
+  "description": "Grammars for Machine Learning entities: classifier names, classifier measures, etc.",
+  "version": "0.1.0",
+  "perl": "6.d",
+  "authors": [
+    "Anton Antonov"
+  ],
+  "auth": "zef:antononcube",
+  "depends": [
+    "DSL::Shared:ver<0.1.2+>"
+  ],
+  "build-depends": [],
+  "test-depends": [],
+  "provides": {
+    "DSL::Entity::MachineLearning": "lib/DSL/Entity/MachineLearning.rakumod",
+    "DSL::Entity::MachineLearning::Actions::Bulgarian::Standard": "lib/DSL/Entity/MachineLearning/Actions/Bulgarian/Standard.rakumod",
+    "DSL::Entity::MachineLearning::Actions::Raku::System": "lib/DSL/Entity/MachineLearning/Actions/Raku/System.rakumod",
+    "DSL::Entity::MachineLearning::Actions::WL::Entity": "lib/DSL/Entity/MachineLearning/Actions/WL/Entity.rakumod",
+    "DSL::Entity::MachineLearning::Actions::WL::System": "lib/DSL/Entity/MachineLearning/Actions/WL/System.rakumod",
+    "DSL::Entity::MachineLearning::Grammar": "lib/DSL/Entity/MachineLearning/Grammar.rakumod",
+    "DSL::Entity::MachineLearning::Grammar::EntityNames": "lib/DSL/Entity/MachineLearning/Grammar/EntityNames.rakumod",
+    "DSL::Entity::MachineLearning::ResourceAccess": "lib/DSL/Entity/MachineLearning/ResourceAccess.rakumod"
+  },
+  "resources": [
+    "ClassifierNameToEntityID_EN.csv",
+    "ClassifierPropertyNameToEntityID_EN.csv"
+  ],
+  "license": "Artistic-2.0",
+  "tags": [
+    "ML",
+    "machine learning",
+    "classifier",
+    "interpreter",
+    "ner",
+    "parser"
+  ],
+  "api": "1",
+  "source-url": "https://github.com/antononcube/Raku-DSL-Entity-MachineLearning.git"
+}
