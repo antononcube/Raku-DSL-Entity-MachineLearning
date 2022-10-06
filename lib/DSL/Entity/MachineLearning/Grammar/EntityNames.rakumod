@@ -13,6 +13,6 @@ role DSL::Entity::MachineLearning::Grammar::EntityNames
     }
 
     regex entity-classifier-name {
-        ( [ <.wbpl> <entity-name-part> <.wbpr> ]+ % \h+ ) <?{ self.get-resources().known-name('Classfier', $0.Str.lc) }>
+        ([<< <word-value> >>]+ % \h+) <?{ self.get-resources().known-name('Classifier', $0.Str.lc) }>
     }
 }
