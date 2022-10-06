@@ -25,7 +25,8 @@
   "resources": [
     "ClassifierMeasurementNameToEntityID_EN.csv",
     "ClassifierNameToEntityID_EN.csv",
-    "ClassifierPropertyNameToEntityID_EN.csv"
+    "ClassifierPropertyNameToEntityID_EN.csv",
+    "ROCFunctionNameToEntityID_EN.csv"
   ],
   "license": "Artistic-2.0",
   "tags": [

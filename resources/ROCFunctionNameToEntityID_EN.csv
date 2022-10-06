@@ -1,0 +1,51 @@
+Name,EntityID
+a c c,ACC
+ACC,ACC
+accuracy,Accuracy
+Accuracy,Accuracy
+area under roc curve,AreaUnderROCCurve
+AreaUnderROCCurve,AreaUnderROCCurve
+a u r o c,AUROC
+AUROC,AUROC
+f1,F1
+F1,F1
+f1 score,F1Score
+F1Score,F1Score
+false discovery rate,FalseDiscoveryRate
+FalseDiscoveryRate,FalseDiscoveryRate
+false negative rate,FalseNegativeRate
+FalseNegativeRate,FalseNegativeRate
+false omission rate,FalseOmissionRate
+FalseOmissionRate,FalseOmissionRate
+false positive rate,FalsePositiveRate
+FalsePositiveRate,FalsePositiveRate
+fdr,FDR
+FDR,FDR
+fnr,FNR
+FNR,FNR
+f o r,FOR
+FOR,FOR
+f p r,FPR
+FPR,FPR
+n p v,NPV
+NPV,NPV
+p p v,PPV
+PPV,PPV
+precision,Precision
+Precision,Precision
+recall,Recall
+Recall,Recall
+sensitivity,Sensitivity
+Sensitivity,Sensitivity
+s p c,SPC
+SPC,SPC
+specificity,Specificity
+Specificity,Specificity
+t n r,TNR
+TNR,TNR
+t p r,TPR
+TPR,TPR
+true negative rate,TrueNegativeRate
+TrueNegativeRate,TrueNegativeRate
+true positive rate,TruePositiveRate
+TruePositiveRate,TruePositiveRate

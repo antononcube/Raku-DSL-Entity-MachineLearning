@@ -16,12 +16,15 @@ grammar DSL::Entity::MachineLearning::Grammar
         | <pipeline-command>
         | <classifier-measurement-entity-command>
         | <classifier-property-entity-command>
-        | <classifier-entity-command> }
+        | <classifier-entity-command>
+        | <roc-function-entity-command>
+    }
 
     regex machine-learning-entity-command {
         | <classifier-measurement-entity-command>
         | <classifier-property-entity-command>
         | <classifier-entity-command>
+        | <roc-function-entity-command>
     }
 
     regex classifier-measurement-entity-command { <entity-classifier-measurement-name> }
@@ -29,5 +32,7 @@ grammar DSL::Entity::MachineLearning::Grammar
     regex classifier-property-entity-command { <entity-classifier-property-name> }
 
     regex classifier-entity-command { <entity-classifier-name> }
+
+    regex roc-function-entity-command { <entity-roc-function-name> }
 }
 

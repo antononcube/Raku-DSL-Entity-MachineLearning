@@ -1,0 +1,33 @@
+use lib './lib';
+use lib '.';
+use DSL::Entity::MachineLearning;
+use Test;
+
+##===========================================================
+## Data formats
+##===========================================================
+
+my $pCOMMAND = DSL::Entity::MachineLearning::Grammar;
+$pCOMMAND.set-resources(DSL::Entity::MachineLearning::resource-access-object());
+
+plan 6;
+
+## 1
+ok $pCOMMAND.parse('AUROC', rule => 'roc-function-entity-command'), 'AUROC';
+
+## 2
+ok $pCOMMAND.parse('area under roc curve', rule => 'roc-function-entity-command'), 'area under roc curve';
+
+## 3
+ok $pCOMMAND.parse('True positive rate', rule => 'roc-function-entity-command'), 'True positive number';
+
+## 4
+ok $pCOMMAND.parse('TruePositiveRate', rule => 'roc-function-entity-command'), 'TruePositiveRate';
+
+## 5
+ok $pCOMMAND.parse('Accuracy', rule => 'roc-function-entity-command'), 'Accuracy';
+
+## 6
+ok $pCOMMAND.parse('f1 score', rule => 'roc-function-entity-command'), 'f1 score';
+
+done-testing;

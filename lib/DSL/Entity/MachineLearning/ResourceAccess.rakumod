@@ -12,7 +12,7 @@ class DSL::Entity::MachineLearning::ResourceAccess
     #| DSL::Shared::Entity::ResourceAccess.make()
     #| with the correct file names.
     method get-resource-files( --> Hash) {
-        my @fileNames = <Classifier ClassifierMeasurement ClassifierProperty>;
+        my @fileNames = <Classifier ClassifierMeasurement ClassifierProperty ROCFunction>;
         my %resources = @fileNames Z=> @fileNames.map({ $_ ~  'NameToEntityID_EN.csv' });
         %resources = %resources.map({ $_.key => %?RESOURCES{$_.value} });
         return %resources;

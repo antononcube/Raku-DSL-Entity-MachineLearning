@@ -20,4 +20,7 @@ role DSL::Entity::MachineLearning::Grammar::EntityNames
         ( [ << <word-value> >> ]+ % \h+ ) <?{ self.get-resources().known-name('ClassifierProperty', $0.Str.lc) }>
     }
 
+    regex entity-roc-function-name {
+        ( [ << <word-value> >> ]+ % \h+ ) <?{ self.get-resources().known-name('ROCFunction', $0.Str.lc) }>
+    }
 }
