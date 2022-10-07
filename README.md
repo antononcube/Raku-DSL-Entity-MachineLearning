@@ -12,7 +12,7 @@ zef install https://github.com/antononcube/Raku-DSL-Entity-MachineLearning.git
 
 ------
 
-## Examples
+## Usage examples
 
 ```perl6
 use DSL::Entity::MachineLearning;
@@ -39,12 +39,32 @@ say $pCOMMAND.parse('roc curve', rule => 'machine-learning-entity-command');
 #     word-value => ｢boosted｣
 #     word-value => ｢trees｣
 # ｢roc curve｣
-#  classifier-property-entity-command => ｢roc curve｣
-#   entity-classifier-property-name => ｢roc curve｣
+#  classifier-measurement-entity-command => ｢roc curve｣
+#   entity-classifier-measurement-name => ｢roc curve｣
 #    0 => ｢roc curve｣
 #     word-value => ｢roc｣
 #     word-value => ｢curve｣
 ```
+
+------
+
+## Command line interface
+
+The package provide as Command Line Interface (CLI) to its functionalities:
+
+```shell
+> ToMachineLearningEntityCode --help 
+# Usage:
+#   ToMachineLearningEntityCode <command> [--target=<Str>] [--user=<Str>] -- Conversion of (natural) DSL machine learning entity name into code.
+#   ToMachineLearningEntityCode <target> <command> [--user=<Str>] -- Both target and command as arguments.
+#   
+#     <command>         natural language command (DSL commands)
+#     --target=<Str>    target language/system/package (defaults to 'WL-System') [default: 'WL-System']
+#     --user=<Str>      user identifier (defaults to '') [default: '']
+#     <target>          Programming language.
+```
+
+**Remark:** (Currently) the CLI script always returns results in JSON format. 
 
 ------
 
