@@ -19,7 +19,7 @@ ok $pCOMMAND.parse('AUROC', rule => 'roc-function-entity-command'), 'AUROC';
 ok $pCOMMAND.parse('area under roc curve', rule => 'roc-function-entity-command'), 'area under roc curve';
 
 ## 3
-ok $pCOMMAND.parse('True positive rate', rule => 'roc-function-entity-command'), 'True positive number';
+ok $pCOMMAND.parse('True positive rate', rule => 'roc-function-entity-command'), 'True positive rate';
 
 ## 4
 ok $pCOMMAND.parse('TruePositiveRate', rule => 'roc-function-entity-command'), 'TruePositiveRate';
