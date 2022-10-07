@@ -44,4 +44,13 @@ class DSL::Entity::MachineLearning::Actions::WL::System
         my $nm = $!resources.name-to-entity-id('ClassifierProperty', $/.Str.lc, :!warn);
         make '"' ~ $nm ~ '"';
     }
+
+    method roc-function-entity-command($/) {
+        make $/.values[0].made;
+    }
+
+    method entity-roc-function-name($/) {
+        my $nm = $!resources.name-to-entity-id('ROCFunction', $/.Str.lc, :!warn);
+        make '"' ~ $nm ~ '"';
+    }
 }
