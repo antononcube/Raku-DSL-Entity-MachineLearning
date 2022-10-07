@@ -1,6 +1,24 @@
 #!/usr/bin/env perl6
 use DSL::Entity::MachineLearning;
 
-sub MAIN(Str $commands, Str $target = 'WL-System' ) {
-    put ToMachineLearningEntityCode($commands, $target);
+my %*SUB-MAIN-OPTS = :named-anywhere;
+
+#| Conversion of (natural) DSL machine learning entity name into code.
+multi sub MAIN
+( Str $command, #= natural language command (DSL commands)
+  Str :$target = 'WL-System', #= target language/system/package (defaults to 'WL-System')
+  Str :$user = '' #= user identifier (defaults to '')
+ )
+{
+    my $codeRes = ToMachineLearningEntityCode($command, :$target, userID => $user, format => 'hash');
+    my $res = "\{ \"COMMAND\" : \"$command\", \"CODE\" : \"{$codeRes<CODE>}\", \"USERID\" : \"$user\", \"DSL\" : \"DSL::Entity::MachineLearning\" \}";
+    say $res;
+}
+
+#| Both target and command as arguments.
+multi sub MAIN(Str $target,    #= Programming language.
+               Str $command,   #= A string with one or many commands (separated by ';').
+               Str :$user = '' #= user identifier (defaults to '')
+               ) {
+    MAIN($command, :$target, :$user);
 }
