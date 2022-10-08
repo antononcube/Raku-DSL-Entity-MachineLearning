@@ -37,13 +37,16 @@ say $pCOMMAND.parse('gradient boosted trees',
 my @testCommands = (
 'Decision tree',
 'SupportVectorMachine',
+'Support vector machine',
 'precision',
 'accuracy',
-'true positive number'
+'true positive number',
+'истинско позитивно число',
+'машина от поддържащи вектори'
 );
 
 
-my @targets = ('WL-Entity', 'WL-System', 'Raku::System');
+my @targets = ('WL-System', 'Raku::System');
 
 my @tbl =
         gather {
@@ -57,4 +60,4 @@ my @tbl =
             }
         };
 
-say to-pretty-table(@tbl.sort({ -$_<timing> }));
+say to-pretty-table(@tbl.sort({ -$_<timing> }), field-names=><command target parsed timing>, align=>'l');
