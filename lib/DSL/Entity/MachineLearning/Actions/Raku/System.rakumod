@@ -1,49 +1,9 @@
-use v6;
+use v6.d;
 
-use DSL::Entity::MachineLearning::Grammar;
-use DSL::Entity::MachineLearning::ResourceAccess;
-use DSL::Shared::Actions::English::Raku::PipelineCommand;
-use DSL::Shared::Entity::Actions::Raku::System;
-
+use DSL::Entity::MachineLearning::Actions::WL::System;
 
 class DSL::Entity::MachineLearning::Actions::Raku::System
-        is DSL::Shared::Entity::Actions::Raku::System
-        is DSL::Shared::Actions::English::Raku::PipelineCommand {
+        is DSL::Entity::MachineLearning::Actions::WL::System {
 
-    has DSL::Entity::MachineLearning::ResourceAccess $.resources;
 
-    ##========================================================
-    ## Grammar methods
-    ##========================================================
-
-    method TOP($/) {
-        make $/.values[0].made;
-    }
-
-    method classifier-entity-command($/) {
-        make $/.values[0].made;
-    }
-
-    method entity-classifier-name($/) {
-        my $nm = $!resources.name-to-entity-id('Classifier', $/.Str.lc, :!warn);
-        make '"' ~ $nm ~ '"';
-    }
-
-    method classifier-measurement-entity-command($/) {
-        make $/.values[0].made;
-    }
-
-    method entity-classifier-measurement-name($/) {
-        my $nm = $!resources.name-to-entity-id('ClassifierMeasurement', $/.Str.lc, :!warn);
-        make '"' ~ $nm ~ '"';
-    }
-
-    method classifier-property-entity-command($/) {
-        make $/.values[0].made;
-    }
-
-    method entity-classifier-property-name($/) {
-        my $nm = $!resources.name-to-entity-id('ClassifierProperty', $/.Str.lc, :!warn);
-        make '"' ~ $nm ~ '"';
-    }
 }
