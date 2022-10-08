@@ -1,0 +1,59 @@
+Name,EntityID
+точност,Accuracy
+изходно ниво на точност,AccuracyBaseline
+точност отхвърляне парцел,AccuracyRejectionPlot
+площ под кривата рпх,AreaUnderROCCurve
+време за оценка на партидата,BatchEvaluationTime
+най-добре класифицирани примери,BestClassifiedExamples
+калибровъчна крива,CalibrationCurve
+данни за калибриране,CalibrationData
+функция на класификатора,ClassifierFunction
+клас средна кръстосана ентропия,ClassMeanCrossEntropy
+процент на отхвърляне на класа,ClassRejectionRate
+коен капа,CohenKappa
+разпределение на объркването,ConfusionDistribution
+функция на объркване,ConfusionFunction
+матрица на объркването,ConfusionMatrix
+матрица за объркване,ConfusionMatrixPlot
+правилно класифицирани примери,CorrectlyClassifiedExamples
+комунални услуги за вземане на решения,DecisionUtilities
+грешка,Error
+време за оценка,EvaluationTime
+примери,Examples
+f1 резултат,F1Score
+фалшив процент на откриване,FalseDiscoveryRate
+фалшиви отрицателни примери,FalseNegativeExamples
+фалшиво отрицателно число,FalseNegativeNumber
+фалшиво отрицателна ставка,FalseNegativeRate
+фалшиво положителни примери,FalsePositiveExamples
+фалшиво положително число,FalsePositiveNumber
+фалшиво положителен процент,FalsePositiveRate
+средна геометрична вероятност,GeometricMeanProbability
+неопределени примери,IndeterminateExamples
+най-малко определени примери,LeastCertainExamples
+вероятност,Likelihood
+линейна калибрационна крива,LinearCalibrationCurve
+вероятност за регистриране,LogLikelihood
+коефициент на корелация на матюс,MatthewsCorrelationCoefficient
+средна кръстосана ентропия,MeanCrossEntropy
+средна полезност на вземането на решения,MeanDecisionUtility
+неправилно класифицирани примери,MisclassifiedExamples
+най-някои примери,MostCertainExamples
+отрицателна прогнозна стойност,NegativePredictiveValue
+недоумение,Perplexity
+точност,Precision
+вероятности,Probabilities
+вероятност хистограма,ProbabilityHistogram
+свойства,Properties
+отзоваване,Recall
+процент на отхвърляне,RejectionRate
+доклад,Report
+рпх криви,ROCCurve
+скот пи,ScottPi
+специфичност,Specificity
+топ объркване,TopConfusions
+истински отрицателни примери,TrueNegativeExamples
+истинско отрицателно число,TrueNegativeNumber
+истински положителни примери,TruePositiveExamples
+истинско положително число,TruePositiveNumber
+най-лошите класифицирани примери,WorstClassifiedExamples

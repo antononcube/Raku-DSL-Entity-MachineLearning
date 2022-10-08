@@ -1,7 +1,7 @@
 {
   "name": "DSL::Entity::MachineLearning",
   "description": "Grammars for Machine Learning entities: classifier names, classifier measures, etc.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "perl": "6.d",
   "authors": [
     "Anton Antonov"
@@ -27,9 +27,13 @@
     "DSL::Entity::MachineLearning::ResourceAccess": "lib/DSL/Entity/MachineLearning/ResourceAccess.rakumod"
   },
   "resources": [
+    "ClassifierMeasurementNameToEntityID_BG.csv",
     "ClassifierMeasurementNameToEntityID_EN.csv",
+    "ClassifierNameToEntityID_BG.csv",
     "ClassifierNameToEntityID_EN.csv",
+    "ClassifierPropertyNameToEntityID_BG.csv",
     "ClassifierPropertyNameToEntityID_EN.csv",
+    "ROCFunctionNameToEntityID_BG.csv",
     "ROCFunctionNameToEntityID_EN.csv"
   ],
   "license": "Artistic-2.0",

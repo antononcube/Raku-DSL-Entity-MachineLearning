@@ -1,0 +1,39 @@
+Name,EntityID
+Праг на приемане,AcceptanceThreshold
+точност,Accuracy
+аномалия детектор,AnomalyDetector
+аномалии детектор,AnomalyDetector
+детектор на аномалии,AnomalyDetector
+детектор за аномалии,AnomalyDetector
+скорост на оценка на партидата,BatchEvaluationSpeed
+време за оценка на партидата,BatchEvaluationTime
+калибриран,Calibrated
+класове,Classes
+номер на класа,ClassNumber
+класа бройки,ClassNumber
+клас приори,ClassPriors
+време за оценка,EvaluationTime
+време за екзекутиране,EvaluationTime
+примерно число,ExampleNumber
+функция екстрактор,FeatureExtractor
+имена на функции,FeatureNames
+брой на харакетеристиките,FeatureNumber
+брой на чертите,FeatureNumber
+типове на характеристиките,FeatureTypes
+типове на чертите,FeatureTypes
+функционална памет,FunctionMemory
+свойства на функцията,FunctionProperties
+неопределен праг,IndeterminateThreshold
+крива на обучение,LearningCurve
+максимална тренировъчна памет,MaxTrainingMemory
+средна кръстосана ентропия,MeanCrossEntropy
+метод,Method
+описание на метода,MethodDescription
+опция за метод,MethodOption
+параметри на метода,MethodParameters
+липсващ синтезатор,MissingSynthesizer
+цел на изпълнението,PerformanceGoal
+свойства,Properties
+тренировъчен клас Приори,TrainingClassPriors
+време за обучение,TrainingTime
+функция за комунални услуги,UtilityFunction

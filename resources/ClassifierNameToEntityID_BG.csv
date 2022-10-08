@@ -1,0 +1,16 @@
+Name,EntityID
+класови разпределения,ClassDistributions
+дърво за вземане на решения,DecisionTree
+дърво за решения,DecisionTree
+решаващо дърво,DecisionTree
+градиентно подсилени дървета,GradientBoostedTrees
+градиент подсилени дървета,GradientBoostedTrees
+логистична регресия,LogisticRegression
+марков,Markov
+наивен бейс,NaiveBayes
+най-близки съседи,NearestNeighbors
+най-близките съседи,NearestNeighbors
+невронна мрежа,NeuralNetwork
+случайна гора,RandomForest
+поддържаща векторна машина,SupportVectorMachine
+машина от поддържащи вектори,SupportVectorMachine

@@ -1,0 +1,25 @@
+Name,EntityID
+точност,Accuracy
+площ под кривата рпх,AreaUnderROCCurve
+площ под рпх кривата,AreaUnderROCCurve
+е1,F1
+ф1 резултат,F1Score
+пропорция на отрицателно откриване,FalseDiscoveryRate
+пропорция на фалшиво откриване,FalseDiscoveryRate
+фалшива отрицателна пропорция,FalseNegativeRate
+пропорция на фалшив пропуск,FalseOmissionRate
+пропорция на фалшиво идентифициране,FalsePositiveRate
+пропорция на фалшиво обозначаване,FalsePositiveRate
+точност,Precision
+отзоваване,Recall
+чувствителност,Sensitivity
+специфичност,Specificity
+пропорция на отрицателно идентифициране,TrueNegativeRate
+пропорция на фалшиво идентифициране,TrueNegativeRate
+пропорция на отрицателно обозначаване,TrueNegativeRate
+пропорция на фалшиво обозначаване,TrueNegativeRate
+пропорция на истинско идентифициране,TruePositiveRate
+пропорция на фалшиво идентифициране,TruePositiveRate
+пропорция на истинско обозначаване,TruePositiveRate
+пропорция на фалшиво обозначаване,TruePositiveRate
+истинско позитивно число,TruePositiveRate
