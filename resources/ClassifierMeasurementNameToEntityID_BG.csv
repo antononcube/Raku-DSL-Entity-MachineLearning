@@ -1,6 +1,6 @@
 Name,EntityID
-точност,Accuracy
 прецизност,Accuracy
+акуратност,Accuracy
 изходно ниво на точност,AccuracyBaseline
 точност отхвърляне парцел,AccuracyRejectionPlot
 площ под кривата рпх,AreaUnderROCCurve
