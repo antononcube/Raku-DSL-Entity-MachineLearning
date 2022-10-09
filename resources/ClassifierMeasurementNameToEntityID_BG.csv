@@ -1,9 +1,11 @@
 Name,EntityID
 точност,Accuracy
+прецизност,Accuracy
 изходно ниво на точност,AccuracyBaseline
 точност отхвърляне парцел,AccuracyRejectionPlot
 площ под кривата рпх,AreaUnderROCCurve
-време за оценка на партидата,BatchEvaluationTime
+време за изчисляване на партидата,BatchEvaluationTime
+време на партидно изчисляване,BatchEvaluationTime
 най-добре класифицирани примери,BestClassifiedExamples
 калибровъчна крива,CalibrationCurve
 данни за калибриране,CalibrationData
@@ -13,12 +15,16 @@ Name,EntityID
 коен капа,CohenKappa
 разпределение на объркването,ConfusionDistribution
 функция на объркване,ConfusionFunction
+функция на объркването,ConfusionFunction
+функция на объркванията,ConfusionFunction
 матрица на объркването,ConfusionMatrix
 матрица за объркване,ConfusionMatrixPlot
+матрица за объркванията,ConfusionMatrixPlot
 правилно класифицирани примери,CorrectlyClassifiedExamples
 комунални услуги за вземане на решения,DecisionUtilities
 грешка,Error
-време за оценка,EvaluationTime
+изчислително време,EvaluationTime
+време за изчисляване,EvaluationTime
 примери,Examples
 f1 резултат,F1Score
 фалшив процент на откриване,FalseDiscoveryRate
@@ -51,9 +57,12 @@ f1 резултат,F1Score
 рпх криви,ROCCurve
 скот пи,ScottPi
 специфичност,Specificity
-топ объркване,TopConfusions
+най-голямо объркване,TopConfusions
+най-големи обърквания,TopConfusions
+достоверни отрицателни примери,TrueNegativeExamples
 истински отрицателни примери,TrueNegativeExamples
 истинско отрицателно число,TrueNegativeNumber
 истински положителни примери,TruePositiveExamples
 истинско положително число,TruePositiveNumber
+най-лоши класифицирани примери,WorstClassifiedExamples
 най-лошите класифицирани примери,WorstClassifiedExamples
