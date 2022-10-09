@@ -1,51 +1,59 @@
 Name,EntityID
 a c c,ACC
 ACC,ACC
-accuracy,Accuracy
-Accuracy,Accuracy
-area under roc curve,AreaUnderROCCurve
-AreaUnderROCCurve,AreaUnderROCCurve
+accuracy,ACC
+Accuracy,ACC
+area under roc curve,AUROC
+AreaUnderROCCurve,AUROC
 a u r o c,AUROC
 AUROC,AUROC
 f1,F1
 F1,F1
 f1 score,F1Score
 F1Score,F1Score
-false discovery rate,FalseDiscoveryRate
-FalseDiscoveryRate,FalseDiscoveryRate
-false negative rate,FalseNegativeRate
-FalseNegativeRate,FalseNegativeRate
-false omission rate,FalseOmissionRate
-FalseOmissionRate,FalseOmissionRate
-false positive rate,FalsePositiveRate
-FalsePositiveRate,FalsePositiveRate
+false discovery rate,FDR
+FalseDiscoveryRate,FDR
 fdr,FDR
 FDR,FDR
+false negative rate,FNR
+FalseNegativeRate,FNR
 fnr,FNR
 FNR,FNR
+miss rate,FNR
+false omission rate,FOR
+FalseOmissionRate,FOR
 f o r,FOR
 FOR,FOR
+fall-out,FPR
+false positive rate,FPR
+FalsePositiveRate,FPR
 f p r,FPR
 FPR,FPR
+Matthews correlation coefficient,MCC
+negative predictive value,NPV
 n p v,NPV
 NPV,NPV
+positive predictive value,PPV
+PositivePredictiveValue,PPV
 p p v,PPV
 PPV,PPV
-precision,Precision
-Precision,Precision
-recall,Recall
-Recall,Recall
-sensitivity,Sensitivity
-Sensitivity,Sensitivity
+precision,PPV
+Precision,PPV
 s p c,SPC
 SPC,SPC
-specificity,Specificity
-Specificity,Specificity
+selectivity,TNR
+specificity,TNR
+Specificity,TNR
 t n r,TNR
 TNR,TNR
+true negative rate,TNR
+TrueNegativeRate,TNR
+hit rate,TPR
+recall,TPR
+Recall,TPR
+sensitivity,TPR
+Sensitivity,TPR
 t p r,TPR
 TPR,TPR
-true negative rate,TrueNegativeRate
-TrueNegativeRate,TrueNegativeRate
-true positive rate,TruePositiveRate
-TruePositiveRate,TruePositiveRate
+true positive rate,TPR
+TruePositiveRate,TPR
