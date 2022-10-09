@@ -1,6 +1,7 @@
 Name,EntityID
 accuracy,Accuracy
 Accuracy,Accuracy
+ACC,Accuracy
 accuracy baseline,AccuracyBaseline
 AccuracyBaseline,AccuracyBaseline
 accuracy rejection plot,AccuracyRejectionPlot
@@ -45,18 +46,21 @@ f1 score,F1Score
 F1Score,F1Score
 false discovery rate,FalseDiscoveryRate
 FalseDiscoveryRate,FalseDiscoveryRate
+FDR,FalseDiscoveryRate
 false negative examples,FalseNegativeExamples
 FalseNegativeExamples,FalseNegativeExamples
 false negative number,FalseNegativeNumber
 FalseNegativeNumber,FalseNegativeNumber
 false negative rate,FalseNegativeRate
 FalseNegativeRate,FalseNegativeRate
+FNR,FalseNegativeRate
 false positive examples,FalsePositiveExamples
 FalsePositiveExamples,FalsePositiveExamples
 false positive number,FalsePositiveNumber
 FalsePositiveNumber,FalsePositiveNumber
 false positive rate,FalsePositiveRate
 FalsePositiveRate,FalsePositiveRate
+FPR,FalsePositiveRate
 geometric mean probability,GeometricMeanProbability
 GeometricMeanProbability,GeometricMeanProbability
 indeterminate examples,IndeterminateExamples
@@ -81,6 +85,7 @@ most certain examples,MostCertainExamples
 MostCertainExamples,MostCertainExamples
 negative predictive value,NegativePredictiveValue
 NegativePredictiveValue,NegativePredictiveValue
+NPV,NegativePredictiveValue
 perplexity,Perplexity
 Perplexity,Perplexity
 precision,Precision
@@ -93,6 +98,9 @@ properties,Properties
 Properties,Properties
 recall,Recall
 Recall,Recall
+true positive rate,Recall
+TruePositiveRate,Recall
+TPR,Recall
 rejection rate,RejectionRate
 RejectionRate,RejectionRate
 report,Report
@@ -103,6 +111,9 @@ scott pi,ScottPi
 ScottPi,ScottPi
 specificity,Specificity
 Specificity,Specificity
+true negative rate,Specificity
+TrueNegativeRate,Specificity
+TNR,Specificity
 top confusions,TopConfusions
 TopConfusions,TopConfusions
 true negative examples,TrueNegativeExamples
