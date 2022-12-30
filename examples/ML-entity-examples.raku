@@ -42,7 +42,9 @@ my @testCommands = (
 'accuracy',
 'true positive number',
 'истинско позитивно число',
-'машина от поддържащи вектори'
+'машина от поддържащи вектори',
+'TruePositiveRate',
+'FalsePositiveRate'
 );
 
 
@@ -61,3 +63,27 @@ my @tbl =
         };
 
 say to-pretty-table(@tbl.sort({ -$_<timing> }), field-names=><command target parsed timing>, align=>'l');
+
+#========================================================================================================================
+
+say '=' x 120;
+
+my grammar ROCList
+        does DSL::Entity::MachineLearning::Grammar::EntityNames  {
+    my DSL::Entity::MachineLearning::ResourceAccess $resources;
+
+    method get-resources(--> DSL::Entity::MachineLearning::ResourceAccess) { return $resources; }
+    method set-resources(DSL::Entity::MachineLearning::ResourceAccess $obj) { $resources = $obj; }
+
+    regex TOP { <roc-functions-list> }
+    regex roc-functions-list { <entity-roc-function-name>+ % <sep> }
+    regex sep { \h* ',' \h* | \h+ [ 'and' | 'versus' | 'vs' ] \h+ }
+}
+
+my $obj = ROCList.new;
+$obj.set-resources(DSL::Entity::MachineLearning::resource-access-object());
+
+say $obj.parse('Recall, PPV, TruePositiveRate and FalseNegativeRate');
+
+say '-' x 120;
+say $obj.subparse('TruePositiveRate versus FalseNegativeRate');
