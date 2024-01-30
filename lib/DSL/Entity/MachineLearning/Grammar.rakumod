@@ -1,10 +1,14 @@
+use DSL::Shared::Entity::Grammar::EntityNames;
+use DSL::Shared::Roles::English::PipelineCommand;
 use DSL::Shared::Roles::ErrorHandling;
 use DSL::Entity::MachineLearning::ResourceAccess;
 use DSL::Entity::MachineLearning::Grammar::EntityNames;
 
 grammar DSL::Entity::MachineLearning::Grammar
         does DSL::Shared::Roles::ErrorHandling
-        does DSL::Entity::MachineLearning::Grammar::EntityNames {
+        does DSL::Entity::MachineLearning::Grammar::EntityNames
+        does DSL::Shared::Entity::Grammar::EntityNames
+        does DSL::Shared::Roles::English::PipelineCommand {
 
     my DSL::Entity::MachineLearning::ResourceAccess $resources;
 
